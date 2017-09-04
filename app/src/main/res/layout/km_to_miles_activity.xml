@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="CONVERTING"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/convertingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kilometre"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/beingConverted"
+        android:layout_toRightOf="@+id/convertingText2"
+        android:layout_toEndOf="@+id/convertingText2" />
+
+    <EditText
+        android:id="@+id/beingConverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="29dp"
+        android:text="TO"
+        android:layout_below="@+id/beingConverted"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/convertingText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="MILE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/calulatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convertingText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:onClick="calulateButton"
+        android:text="CALULATE" />
+
+    <TextView
+        android:id="@+id/resultBox"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/calulatebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/reverseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/resultBox"
+        android:layout_alignRight="@+id/resultBox"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:onClick="reverseButton"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</RelativeLayout>
