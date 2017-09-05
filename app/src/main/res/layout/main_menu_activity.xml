@@ -5,13 +5,25 @@
     <Button
         android:id="@+id/kmToMilesButton"
         android:layout_width="110dp"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="42dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="35dp"
         android:onClick="setKmToMetres"
-        android:text="Kilometers TO Miles" />
+        android:text="Kilometers To Miles OR Vise Versa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/poundsToKilogramButton"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/kmToMilesButton"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_toEndOf="@+id/kmToMilesButton"
+        android:layout_toRightOf="@+id/kmToMilesButton"
+        android:onClick="setPoundToKilogram"
+        android:text="Pounds TO Kilogram" />
 </RelativeLayout>

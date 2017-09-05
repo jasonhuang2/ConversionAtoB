@@ -17,5 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, kmToMilesActivity.class);
         startActivity(intent);
     }
+    protected void setPoundToKilogram(View v){
+        Intent intent = new Intent(this, poundsToKilogramActivity.class);
+        startActivity(intent);
+    }
 }
 
