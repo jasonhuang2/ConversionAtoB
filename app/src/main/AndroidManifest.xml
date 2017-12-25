@@ -18,9 +18,12 @@
         </activity>
         <activity
             android:name=".kmToMilesActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".poundsToKilogramActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AverageCalulatorActivity"
             android:parentActivityName=".MainActivity"></activity>
     </application>
 

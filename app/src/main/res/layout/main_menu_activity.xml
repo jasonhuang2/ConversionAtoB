@@ -26,4 +26,15 @@
         android:layout_toRightOf="@+id/kmToMilesButton"
         android:onClick="setPoundToKilogram"
         android:text="Pounds TO Kilogram" />
+
+    <Button
+        android:id="@+id/averageCalulatorButton"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:onClick="averageCalulatorButton"
+        android:text="Average Calulator"
+        android:layout_below="@+id/kmToMilesButton"
+        android:layout_alignLeft="@+id/kmToMilesButton"
+        android:layout_alignStart="@+id/kmToMilesButton" />
 </RelativeLayout>
