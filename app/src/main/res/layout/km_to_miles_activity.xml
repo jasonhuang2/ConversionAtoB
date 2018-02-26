@@ -9,23 +9,21 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="CONVERTING"
-        android:layout_marginLeft="68dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="55dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_toLeftOf="@+id/calulatebutton"
+        android:layout_toStartOf="@+id/calulatebutton" />
 
     <TextView
         android:id="@+id/convertingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kilometre"
+        android:text="Kilometres per hour"
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_above="@+id/beingConverted"
-        android:layout_toRightOf="@+id/convertingText2"
-        android:layout_toEndOf="@+id/convertingText2" />
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
 
     <EditText
         android:id="@+id/beingConverted"
@@ -54,7 +52,7 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="31dp"
-        android:text="MILE"
+        android:text="Miles per hour"
         android:textSize="20dp"
         android:textStyle="bold" />
 

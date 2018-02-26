@@ -35,7 +35,7 @@ public class kmToMilesActivity extends AppCompatActivity {
         /*
         Case #1: Converting KM to Mile
          */
-        if (stringConvertingTarget.matches("Kilometre")) {
+        if (stringConvertingTarget.matches("Kilometres per hour")) {
 
             //Subcase: If user forgets to input number
             if (stringConvertingInout.matches("")) {
@@ -45,13 +45,13 @@ public class kmToMilesActivity extends AppCompatActivity {
 
                 Double kmToMile = Math.round((km * 0.62137119223733) * 10000.0) / 10000.0;
 
-                resultBox.setText(Double.toString(kmToMile) + " MILES");
+                resultBox.setText(Double.toString(kmToMile) + " Miles per hour");
             }
         }
         /*
         Case #2: Converting Mile to KM
          */
-        if (stringConvertingTarget.matches("Mile")) {
+        if (stringConvertingTarget.matches("Miles per hour")) {
 
             //Subcase: If user forgets to input number
             if (stringConvertingInout.matches("")) {
@@ -61,7 +61,7 @@ public class kmToMilesActivity extends AppCompatActivity {
 
                 Double mileToKilometre = Math.round((mile / 0.62137119223733) * 10000.0) / 10000.0;
 
-                resultBox.setText(Double.toString(mileToKilometre) + " KILOMETRES");
+                resultBox.setText(Double.toString(mileToKilometre) + " Kilometres per hour");
             }
         }
     }
@@ -74,14 +74,14 @@ public class kmToMilesActivity extends AppCompatActivity {
         String stringConvertingText = convertingText.getText().toString();
 
         //Case #1: If converting text is KM
-        if(stringConvertingText.matches("Kilometre")){
-            convertingText.setText("Mile");
-            convertingText2.setText("Kilometre");
+        if(stringConvertingText.matches("Kilometres per hour")){
+            convertingText.setText("Miles per hour");
+            convertingText2.setText("Kilometres per hour");
         }
         //Case #2: If converting text is Mile
-        if(stringConvertingText.matches("Mile")){
-            convertingText.setText("Kilometre");
-            convertingText2.setText("Mile");
+        if(stringConvertingText.matches("Miles per hour")){
+            convertingText.setText("Kilometres per hour");
+            convertingText2.setText("Miles per hour");
         }
     }
 }
