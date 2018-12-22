@@ -28,5 +28,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AverageCalulatorActivity.class);
         startActivity(intent);
     }
+
+        protected void gallonsToLitreButton(View v){
+        Intent intent = new Intent(this, gallonsToLitres.class);
+        startActivity(intent);
+    }
 }
 

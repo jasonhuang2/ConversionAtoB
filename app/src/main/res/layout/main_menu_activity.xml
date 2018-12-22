@@ -37,4 +37,13 @@
         android:layout_below="@+id/kmToMilesButton"
         android:layout_alignLeft="@+id/kmToMilesButton"
         android:layout_alignStart="@+id/kmToMilesButton" />
+
+    <Button
+        android:id="@+id/gallonsToLitresButton"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/averageCalulatorButton"
+        android:layout_alignStart="@+id/poundsToKilogramButton"
+        android:onClick="gallonsToLitreButton"
+        android:text="Gallon to Litre" />
 </RelativeLayout>

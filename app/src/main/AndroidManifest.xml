@@ -24,7 +24,8 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AverageCalulatorActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".gallonsToLitres"></activity>
     </application>
 
 </manifest>
